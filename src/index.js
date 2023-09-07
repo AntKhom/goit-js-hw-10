@@ -22,10 +22,13 @@ const fetchBreeds = () => {
 
 const fetchCatByBreed = (breedId) => {
     const param = {
-        breed_ids:breedId,
+        breed_ids: breedId,
     }
-    return axios.get(imageURL,{params:param})
-        .then((response) => console.log(response.data))
+    return axios.get(imageURL, { params: param })
+        .then((response) => {
+            console.log(response.data)
+            return response.data;
+    })
         .catch((error) => console.log(error))
 }
 
@@ -38,7 +41,11 @@ fetchBreeds()
     })
     .catch((err) => console.log(err));
 
-fetchCatByBreed('abys').then().catch((err) => console.log(err));
+fetchCatByBreed('abys')
+    .then((data) => {
+        console.log(data);        
+    })
+    .catch((err) => console.log(err));
 // class App extends Component {
 
 //   getBreeds() {
