@@ -10,15 +10,22 @@ body {
 }
 
 .breed-select {
-    width:600;
+    width:auto;
     margin-bottom: 16px;
 }
 
+.cat-info {
+    width: auto;
+}
 
 @media screen and (min-width:768px) {
     .cat-info {
         display: flex;
         gap:16px;
+    }
+    .breed-select {
+        width: 600;
+        margin-bottom: 16px;
     }
 }
 .breed-name {

@@ -86,7 +86,7 @@ const choiseCatHandler = (e) => {
 const createMarkup = (item, container) => {
     const markup = 
     `
-    <div><img class=breed-image src='${item.url}' width=600 /></div>
+    <div><img class=breed-image src='${item.url}' alt='foto ${item.breeds[0].name}' width=100%/></div>
     <div>
     <h2 class=breed-name>${item.breeds[0].name}</h2>
     <p class=breed-description>${item.breeds[0].description}</p>
