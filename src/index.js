@@ -43,6 +43,7 @@ const choiseCatHandler = (e) => {
     //console.log(e.target.value); 
     const catId = e.target.value;
     catInfo.classList.add("invisible");
+    messageError.classList.add("invisible") 
     //changeVisibility(messageLoader);
     Loading.circle(messageLoader.textContent);
     apiCats.fetchCatByBreed(catId)
