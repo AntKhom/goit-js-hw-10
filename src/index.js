@@ -34,7 +34,8 @@ apiCats.fetchBreeds()
         createListNameCats(data);
     })
     .catch((err) => {
-        console.log(err)
+        console.log(err);
+        changeVisibility(catInfo);
         changeVisibility(messageError);
     });
 
