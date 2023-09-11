@@ -35,7 +35,7 @@ apiCats.fetchBreeds()
     })
     .catch((err) => {
         console.log(err);
-        changeVisibility(catInfo);
+        catInfo.classList.add("invisible");
         changeVisibility(messageError);
     });
 

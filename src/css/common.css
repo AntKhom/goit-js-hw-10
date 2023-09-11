@@ -39,3 +39,7 @@ body {
 .breed-temperament {
     font-weight: 700;
 }
+
+.invisible {
+    display: none;
+}
